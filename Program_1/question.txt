@@ -1,0 +1,3 @@
+Design a static web portal using HTML5 semantic elements and Bootstrap of online book
+stores. The website should consist the pages like. Home page, Registration and user Login,
+User profile page, Books catalogue, Shopping cart, Payment system, order confirmation

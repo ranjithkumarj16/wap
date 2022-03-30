@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Resume form</title>
+	<style>
+form { 
+  display: block;
+  margin-top: 2em;
+}
+</style>
+</head>
+<body bgcolor="lightsteelblue">
+	<h1 align="center">Resume</h1>
+	<form autocomplete="off">
+		<fieldset o>
+			<legend style="float:center" >
+				Personal details
+			</legend><br>
+			<label for="t1">First Name :</label>
+			<input type="text" id="t1" name="textbox1" placeholder="First name" required><br><br>
+			<label for="t2">Last Name :</label>
+			<input type="text" id="t2" name="textbox2" placeholder="Last name" required><br><br>
+			<label for="pi">Personal info:</label>
+			<textarea rows="3" cols="10" id="pi" placeholder="Write about your self" required></textarea><br><br>
+			<label for="areas">Areas of expertise</label>
+			<textarea rows="3" cols="10" id="areas" placeholder="Areas of expertise" required></textarea><br><br>
+			<label for="d">DOB</label>
+			<input type="date" id="d" name="Date of birth" required><br><br>
+			<label for="e">Email id:</label>
+			<input type="Email" id="e" placeholder="abc2000@gmail.com" required><br><br>
+			<label for="c">Contact number:</label>
+			<input type="tel" id="c" name="phone"  maxlength="10" required><br><br>
+			<label for="Address">Address:</label>
+			<textarea rows="5" cols="10" id="Address"></textarea><br><br>
+			<label for="link">Linkedin:</label>
+			<input type="text" id="link">
+		</fieldset><br><br>
+		<fieldset>
+			<legend style="float:center">Education qualifications</legend><br>
+			<label for="school">School:</label>
+			<input type="text" name="school" id="school"><br><br>
+			<label for="sboard">School board:</label>
+			<select name="board" id="sboard">
+      <option value="Karnataka Secondary Education Examination Board">Karnataka Secondary Education Examination Board</option>
+      <option value="CBSE">CBSE</option>
+      <option value="ICSE">ICSE</option>
+      <option value="Others">Others</option>
+      </select><br><br>
+      <label for="syear">Year of pass out:</label>
+      <input type="month" name="year" id="syear" value="2016-04"><br><br>
+      <label for="pu">Pre-university</label>
+			<input type="text" name="pu" id="pu"><br><br>
+			<label for="Puboard">PU board:</label>
+			<select name="board" id="puboard">
+      <option value="Karnataka Secondary Education Examination Board">Karnataka Secondary Education Examination Board</option>
+      <option value="CBSE">CBSE</option>
+      <option value="ICSE">ICSE</option>
+      <option value="Others">Others</option>
+      </select><br><br>
+      <label for="syear">Year of pass out:</label>
+      <input type="month" name="year" id="syear" value="2016-04">
+      <label for="degree">UG:</label>
+			<select name="board" id="puboard">
+      <option value="Karnataka Secondary Education Examination Board">Karnataka Secondary Education Examination Board</option>
+      <option value="CBSE">CBSE</option>
+      <option value="ICSE">ICSE</option>
+      <option value="Others">Others</option>
+
+		</fieldset>
+  </form>
+</body>
+</html>

@@ -1,0 +1,2 @@
+Create an inventory management system portal using HTML5 and apply cascading style sheet
+for better user interface experience.

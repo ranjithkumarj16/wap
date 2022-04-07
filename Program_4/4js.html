@@ -1,0 +1,82 @@
+<!-- 
+
+Design a login page to demonstrate following
+a) Display user name and time on successful login
+b) change the background color of the page
+c) validate the username and password using pattern matching in JavaScript
+
+-->
+
+
+<html>
+<head>
+        <title>JavaScript Login</title>
+        <style>
+                input[type=text],input[type=password]
+                {
+                        width:100%;
+                        padding:15px;
+                        margin:5px 0 22px 0;
+                        border:none;
+                        background:#f1f1f1;
+                }
+
+                button{
+                        padding:10px;
+                        width:49%;
+                        margin:10px;
+
+                }
+
+                h2{
+                        color:green;
+                        text-align:center;
+                }
+        </style>
+
+        <script>
+                username=/^[A-ZA-ZA-ZA-Z0-90-9A-ZA-ZA-Z0-90-90-9]{12}$/
+                function check(form)
+                {
+                        var userid=form.userid.value;
+                        if (!username.test(userid))
+                        {
+                                alert("Invalid Username");
+                        }
+                        else
+                        {
+                                d = new Date();
+                                alert("Welcome "+userid+"\n\nLogin Time: "+d);
+                                document.write("Login Time: "+d);
+                                document.body.bgColor="yellow";
+                        }
+                }
+
+                function changebg(color)
+                {
+                        document.body.style.background = color;
+                }
+        </script>
+</head>
+<body>
+        <h2>LOGIN PAGE</h2>
+        <form>
+                <fieldset>
+                <label>USERNMAE</label>
+                <input type="text" id="userid" name="userid" placeholder="Enter Your Username" onfocus="this.value=''" required>
+                <label>PASSWORD </label>
+                <input type="password" id="psw" name="psw" placeholder="Enter Your Password" required>
+                <input type="button" onclick=check(this.form) value="LOGIN" style="width:49%; padding:10px">
+                <input type="reset" value="RESET" style="width:49%; padding:10px">
+                </fieldset>
+        </form><br>
+
+        <h2>CHANGE BACKGROUND</h2>
+        <button type="button" onclick=changebg('pink')>PINK</button><br>
+        <button type="button" onclick=changebg('blue')>BLUE</button><br>
+        <button type="button" onclick=changebg('')>RESET</button><br>
+
+</body>
+</html>
+
+
